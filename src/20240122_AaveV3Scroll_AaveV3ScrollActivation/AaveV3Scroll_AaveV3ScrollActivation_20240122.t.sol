@@ -10,6 +10,8 @@ import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
 import 'forge-std/Test.sol';
 import {ProtocolV3TestBase, ReserveConfig} from 'aave-helpers/ProtocolV3TestBase.sol';
 import {AaveV3Scroll_AaveV3ScrollActivation_20240122} from './AaveV3Scroll_AaveV3ScrollActivation_20240122.sol';
+import {DeployWETHRateStrategyFromFactoryLib} from 'src/20240122_AaveV3Scroll_AaveV3ScrollActivation/DeployWETHRateStrategy.s.sol';
+import {AaveV3Scroll_UpdateWETHRateStrategy} from 'src/20240122_AaveV3Scroll_AaveV3ScrollActivation/AaveV3Scroll_UpdateWETHRateStrategy.sol';
 
 /**
  * @dev Test for AaveV3Scroll_AaveV3ScrollActivation_20240122
@@ -33,6 +35,16 @@ contract AaveV3Scroll_AaveV3ScrollActivation_20240122_Test is ProtocolV3TestBase
       AaveV3Scroll.POOL,
       address(proposal)
     );
+  }
+
+  function test_WETHRateStrategyUpdate() public {
+    GovV3Helpers.executePayload(vm, address(proposal));
+
+    address payloadToUpdateRates = address(
+      new AaveV3Scroll_UpdateWETHRateStrategy(DeployWETHRateStrategyFromFactoryLib.deploy())
+    );
+
+    defaultTest('AaveV3Scroll_UpdateWETHRateStrategy', AaveV3Scroll.POOL, payloadToUpdateRates);
   }
 
   function test_AdminPermissions() public {
