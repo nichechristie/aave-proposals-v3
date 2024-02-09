@@ -6,7 +6,7 @@
 
 | description | value before | value after |
 | --- | --- | --- |
-| interestRateStrategy | [0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05](https://scrollscan.com/address/0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05) | [0x1044186cC4d83F5b466FA4572CE28E838FCB3E3c](https://scrollscan.com/address/0x1044186cC4d83F5b466FA4572CE28E838FCB3E3c) |
+| interestRateStrategy | [0x9205B37978aC983A297dFB53b3f3D2cCC7DDDADa](https://scrollscan.com/address/0x9205B37978aC983A297dFB53b3f3D2cCC7DDDADa) | [0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05](https://scrollscan.com/address/0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05) |
 | variableRateSlope2 | 8 % | 80 % |
 | stableRateSlope2 | 8 % | 80 % |
 | interestRate | ![before](/.assets/7af3d32d5b53ea30044e549f0c9e403bbecdaaf1.svg) | ![after](/.assets/ca95ddfd1ad1b620d55be691c73b3c69ffb3f3f0.svg) |
@@ -18,13 +18,13 @@
   "reserves": {
     "0x5300000000000000000000000000000000000004": {
       "interestRateStrategy": {
-        "from": "0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05",
-        "to": "0x1044186cC4d83F5b466FA4572CE28E838FCB3E3c"
+        "from": "0x9205B37978aC983A297dFB53b3f3D2cCC7DDDADa",
+        "to": "0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05"
       }
     }
   },
   "strategies": {
-    "0x1044186cC4d83F5b466FA4572CE28E838FCB3E3c": {
+    "0xD828F2f9Da85b190721797bEaD5Eb0acC4150f05": {
       "from": null,
       "to": {
         "baseStableBorrowRate": "53000000000000000000000000",

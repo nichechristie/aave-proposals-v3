@@ -1,22 +1,23 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import {ScrollScript} from 'aave-helpers/ScriptUtils.sol';
+import {Script, ScrollScript} from 'aave-helpers/ScriptUtils.sol';
 import {WadRayMath} from 'aave-v3-core/contracts/protocol/libraries/math/WadRayMath.sol';
 import {AaveV3Scroll} from 'aave-address-book/AaveV3Scroll.sol';
 import {IV3RateStrategyFactory} from 'aave-helpers/v3-config-engine/V3RateStrategyFactory.sol';
+import {AaveV3Scroll_AaveV3ScrollActivation_20240122} from './AaveV3Scroll_AaveV3ScrollActivation_20240122.sol';
 
 /**
  * @dev Deploy Ethereum
  * command: make deploy-ledger contract=src/20240122_AaveV3Scroll_AaveV3ScrollActivation/DeployWETHRateStrategy.s.sol:DeployWETHRateStrategy chain=scroll
  */
-contract DeployWETHRateStrategy is ScrollScript {
-  function run() external broadcast {
-    DeployWETHRateStrategyFromFactoryLib.deploy();
+contract DeployWETHRateStrategy is Script {
+  function run() external {
+    vm.startBroadcast();
+    deploy();
+    vm.stopBroadcast();
   }
-}
 
-library DeployWETHRateStrategyFromFactoryLib {
   function deploy() public returns (address) {
     IV3RateStrategyFactory.RateStrategyParams[]
       memory rateParams = new IV3RateStrategyFactory.RateStrategyParams[](1);
