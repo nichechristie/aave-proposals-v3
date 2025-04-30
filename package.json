@@ -41,7 +41,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
     "tsx": "^4.7.1",
-    "viem": "^2.9.25"
+    "viem": "^2.26.2"
   },
   "lint-staged": {
     "*": "prettier --ignore-unknown --write"
