@@ -534,17 +534,14 @@
     chalk "^4.1.2"
     figures "^3.2.0"
 
-"@inquirer/testing@^2.1.13":
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/@inquirer/testing/-/testing-2.1.13.tgz#e5f0bb263263e1537c5727415eb11e0194ab77f2"
-  integrity sha512-q0r3k9Gog9RJYkcsBzi4DLN9ZKApxLKddAbdRBTITOdmTiTqiTnFHgvWsXdSd+1xkRk5F/7rgiJgo0hW4xLaPQ==
+"@inquirer/testing@^2.1.46":
+  version "2.1.46"
+  resolved "https://registry.yarnpkg.com/@inquirer/testing/-/testing-2.1.46.tgz#d185a11ae06e65f9851fb864a813f0a1eddc381b"
+  integrity sha512-sTdl+ouiL11X3frBzgehTeXzVV+/A97L70QZ3FL41IA5omo0RSbfQBnBjyGuSnC3nU+CoqQYQrpRMIpmAdVjCw==
   dependencies:
-    "@inquirer/type" "^1.2.1"
-    "@types/mute-stream" "^0.0.4"
-    "@types/node" "^20.11.26"
+    "@inquirer/type" "^3.0.6"
     ansi-escapes "^4.3.2"
-    mute-stream "^1.0.0"
-    strip-ansi "^6.0.1"
+    mute-stream "^2.0.0"
 
 "@inquirer/type@^1.1.5":
   version "1.1.5"
@@ -556,10 +553,10 @@
   resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-1.1.6.tgz#f2656456e58fb93c7b73d5aad583b928c77b9206"
   integrity sha512-OCKOpn0CrFDslR8s3who7hlr823zXTb1iShGCaaWgEJFfkIV0T9aLZV2QGnOuU78IrsPYLkr3oKx9dZwwCH3Rw==
 
-"@inquirer/type@^1.2.1":
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-1.2.1.tgz#fbc7ab3a2e5050d0c150642d5e8f5e88faa066b8"
-  integrity sha512-xwMfkPAxeo8Ji/IxfUSqzRi0/+F2GIqJmpc5/thelgMGsjNZcjDDRBO9TLXT1s/hdx/mK5QbVIvgoLIFgXhTMQ==
+"@inquirer/type@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@inquirer/type/-/type-3.0.6.tgz#2500e435fc2014c5250eec3279f42b70b64089bd"
+  integrity sha512-/mKVCtVpyBu3IDarv0G+59KC4stsD5mDsGpYh+GKs1NZT88Jh52+cuoA1AtLk2Q0r/quNl+1cSUyLRHBFeD0XA==
 
 "@jest/schemas@^29.6.3":
   version "29.6.3"
@@ -778,13 +775,6 @@
   version "20.11.10"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.10.tgz#6c3de8974d65c362f82ee29db6b5adf4205462f9"
   integrity sha512-rZEfe/hJSGYmdfX9tvcPMYeYPW2sNl50nsw4jZmRcaG0HIAb0WYEpsB05GOb53vjqpyE9GUhlDQ4jLSoB5q9kg==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@^20.11.26":
-  version "20.11.30"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.30.tgz#9c33467fc23167a347e73834f788f4b9f399d66f"
-  integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -1865,6 +1855,11 @@ mute-stream@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/mute-stream/-/mute-stream-1.0.0.tgz"
   integrity sha512-avsJQhyd+680gKXyG/sQc0nXaC6rBkPOfyHYcFb9+hdkqQkR9bdnkJ0AMZhke0oesPqIO+mFFJ+IdBc7mst4IA==
+
+mute-stream@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-2.0.0.tgz#a5446fc0c512b71c83c44d908d5c7b7b4c493b2b"
+  integrity sha512-WWdIxpyjEn+FhQJQQv9aQAYlHoNVdzIzUySNV1gHUPDSdZJ3yZn7pAAbQcV7B56Mvu881q9FZV+0Vx2xC44VWA==
 
 nanoid@^3.3.7:
   version "3.3.7"
