@@ -39,7 +39,7 @@
     "catapulta-verify": "^1.1.1",
     "commander": "^11.1.0",
     "husky": "^8.0.3",
-    "lint-staged": "^15.2.2",
+    "lint-staged": "^16.0.0",
     "tsx": "^4.7.1",
     "viem": "^2.9.25"
   },
