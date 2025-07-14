@@ -40,7 +40,7 @@
     "commander": "^11.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.2.2",
-    "tsx": "^4.7.1",
+    "tsx": "^4.20.3",
     "viem": "^2.9.25"
   },
   "lint-staged": {
